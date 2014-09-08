@@ -22,6 +22,7 @@
 		A4151C5B19BE0BF600F750A5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4151C3F19BE0BF600F750A5 /* CoreData.framework */; };
 		A4151C6319BE0BF600F750A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4151C6119BE0BF600F750A5 /* InfoPlist.strings */; };
 		A4151C6519BE0BF600F750A5 /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4151C6419BE0BF600F750A5 /* DiaryTests.m */; };
+		A4151C7019BE11D200F750A5 /* ZMCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = A4151C6F19BE11D200F750A5 /* ZMCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +47,15 @@
 		A4151C4919BE0BF600F750A5 /* Diary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diary-Prefix.pch"; sourceTree = "<group>"; };
 		A4151C4A19BE0BF600F750A5 /* ZMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAppDelegate.h; sourceTree = "<group>"; };
 		A4151C4B19BE0BF600F750A5 /* ZMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAppDelegate.m; sourceTree = "<group>"; };
-		A4151C4E19BE0BF600F750A5 /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
+		A4151C4E19BE0BF600F750A5 /* ZMDiaryEntry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ZMDiaryEntry; sourceTree = "<group>"; };
 		A4151C5019BE0BF600F750A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A4151C5619BE0BF600F750A5 /* DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4151C5719BE0BF600F750A5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A4151C6019BE0BF600F750A5 /* DiaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiaryTests-Info.plist"; sourceTree = "<group>"; };
 		A4151C6219BE0BF600F750A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4151C6419BE0BF600F750A5 /* DiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryTests.m; sourceTree = "<group>"; };
+		A4151C6E19BE11D200F750A5 /* ZMCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMCoreDataStack.h; sourceTree = "<group>"; };
+		A4151C6F19BE11D200F750A5 /* ZMCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				A4151C4A19BE0BF600F750A5 /* ZMAppDelegate.h */,
 				A4151C4B19BE0BF600F750A5 /* ZMAppDelegate.m */,
+				A4151C6E19BE11D200F750A5 /* ZMCoreDataStack.h */,
+				A4151C6F19BE11D200F750A5 /* ZMCoreDataStack.m */,
 				A4151C5019BE0BF600F750A5 /* Images.xcassets */,
 				A4151C4D19BE0BF600F750A5 /* Diary.xcdatamodeld */,
 				A4151C4219BE0BF600F750A5 /* Supporting Files */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4151C7019BE11D200F750A5 /* ZMCoreDataStack.m in Sources */,
 				A4151C4F19BE0BF600F750A5 /* Diary.xcdatamodeld in Sources */,
 				A4151C4819BE0BF600F750A5 /* main.m in Sources */,
 				A4151C4C19BE0BF600F750A5 /* ZMAppDelegate.m in Sources */,
@@ -463,9 +469,9 @@
 		A4151C4D19BE0BF600F750A5 /* Diary.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A4151C4E19BE0BF600F750A5 /* Diary.xcdatamodel */,
+				A4151C4E19BE0BF600F750A5 /* ZMDiaryEntry */,
 			);
-			currentVersion = A4151C4E19BE0BF600F750A5 /* Diary.xcdatamodel */;
+			currentVersion = A4151C4E19BE0BF600F750A5 /* ZMDiaryEntry */;
 			path = Diary.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
