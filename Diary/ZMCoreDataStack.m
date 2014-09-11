@@ -14,7 +14,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 
-+(instancetype)defaultsStack{
++(instancetype)defaultStack{
     static ZMCoreDataStack * defaultStack;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -116,6 +116,9 @@
 // Returns the URL to the application's Documents directory.
 - (NSURL *)applicationDocumentsDirectory
 {
+    
+    NSURL *url  = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    NSLog(@"%@", url.absoluteString);
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 

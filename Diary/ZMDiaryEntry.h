@@ -10,7 +10,15 @@
 #import <CoreData/CoreData.h>
 
 
+NS_ENUM(int16_t, ZMDiaryEntryMood) {
+    ZMDiaryEntryMoodGood =0,
+    ZMDiaryEntryMoodAverage=1,
+    ZMDiaryEntryMoodBad = 2,
+    
+    
+};
 @interface ZMDiaryEntry : NSManagedObject
+
 
 @property (nonatomic) NSTimeInterval date;
 @property (nonatomic, retain) NSString * body;

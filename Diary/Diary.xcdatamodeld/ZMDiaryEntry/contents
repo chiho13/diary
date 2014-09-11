@@ -4,8 +4,12 @@
         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mood" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
+    <entity name="Entity1" syncable="YES"/>
     <elements>
-        <element name="Entity" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Entity" positionX="-1458" positionY="-1422" width="117" height="118"/>
+        <element name="Entity1" positionX="-1449" positionY="-1368" width="128" height="45"/>
     </elements>
 </model>

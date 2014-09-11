@@ -7,10 +7,14 @@
 //
 
 #import "ZMNewEntryViewController.h"
+#import "ZMDiaryEntry.h"
+#import "ZMCoreDataStack.h"
 
 @interface ZMNewEntryViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
+
 
 @implementation ZMNewEntryViewController
 
@@ -34,6 +38,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)dismissSelf{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+-(void)insertDiaryEntry {
+    ZMCoreDataStack *coreDataStack =[ZMCoreDataStack defaultStack];
+    ZMDiaryEntry *entry = [NSEntityDescription insertNewObjectForEntityForName:@"ZMDiaryEntry" inManagedObjectContext:coreDataStack.managedObjectContext];
+    entry.body = self.textField.text;
+    entry.date = [[NSDate date] timeIntervalSince1970];
+    [coreDataStack saveContext];
+    
+}
+
+- (IBAction)doneWasPressed:(id)sender {
+    [self insertDiaryEntry];
+    [self dismissSelf];
+}
+- (IBAction)cancelWasPressed:(id)sender {
+    [self dismissSelf];
+}
+
 
 /*
 #pragma mark - Navigation

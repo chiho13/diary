@@ -14,7 +14,6 @@
 		A4151C4619BE0BF600F750A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4151C4419BE0BF600F750A5 /* InfoPlist.strings */; };
 		A4151C4819BE0BF600F750A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4151C4719BE0BF600F750A5 /* main.m */; };
 		A4151C4C19BE0BF600F750A5 /* ZMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4151C4B19BE0BF600F750A5 /* ZMAppDelegate.m */; };
-		A4151C4F19BE0BF600F750A5 /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4151C4D19BE0BF600F750A5 /* Diary.xcdatamodeld */; };
 		A4151C5119BE0BF600F750A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4151C5019BE0BF600F750A5 /* Images.xcassets */; };
 		A4151C5819BE0BF600F750A5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4151C5719BE0BF600F750A5 /* XCTest.framework */; };
 		A4151C5919BE0BF600F750A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4151C3919BE0BF600F750A5 /* Foundation.framework */; };
@@ -23,6 +22,10 @@
 		A4151C6319BE0BF600F750A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4151C6119BE0BF600F750A5 /* InfoPlist.strings */; };
 		A4151C6519BE0BF600F750A5 /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4151C6419BE0BF600F750A5 /* DiaryTests.m */; };
 		A4151C7019BE11D200F750A5 /* ZMCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = A4151C6F19BE11D200F750A5 /* ZMCoreDataStack.m */; };
+		A43FE4CD19BE539100BD0601 /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A43FE4CB19BE539100BD0601 /* Diary.xcdatamodeld */; };
+		A43FE4D019BE564C00BD0601 /* ZMDiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A43FE4CF19BE564C00BD0601 /* ZMDiaryEntry.m */; };
+		A4F2795219C08C1700764C7A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F2795119C08C1700764C7A /* MainStoryboard.storyboard */; };
+		A4F2795519C08E0700764C7A /* ZMNewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F2795419C08E0700764C7A /* ZMNewEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,6 @@
 		A4151C4919BE0BF600F750A5 /* Diary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diary-Prefix.pch"; sourceTree = "<group>"; };
 		A4151C4A19BE0BF600F750A5 /* ZMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAppDelegate.h; sourceTree = "<group>"; };
 		A4151C4B19BE0BF600F750A5 /* ZMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAppDelegate.m; sourceTree = "<group>"; };
-		A4151C4E19BE0BF600F750A5 /* ZMDiaryEntry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ZMDiaryEntry; sourceTree = "<group>"; };
 		A4151C5019BE0BF600F750A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A4151C5619BE0BF600F750A5 /* DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4151C5719BE0BF600F750A5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -56,6 +58,12 @@
 		A4151C6419BE0BF600F750A5 /* DiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryTests.m; sourceTree = "<group>"; };
 		A4151C6E19BE11D200F750A5 /* ZMCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMCoreDataStack.h; sourceTree = "<group>"; };
 		A4151C6F19BE11D200F750A5 /* ZMCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMCoreDataStack.m; sourceTree = "<group>"; };
+		A43FE4CC19BE539100BD0601 /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
+		A43FE4CE19BE564C00BD0601 /* ZMDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMDiaryEntry.h; sourceTree = "<group>"; };
+		A43FE4CF19BE564C00BD0601 /* ZMDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMDiaryEntry.m; sourceTree = "<group>"; };
+		A4F2795119C08C1700764C7A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A4F2795319C08E0700764C7A /* ZMNewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMNewEntryViewController.h; sourceTree = "<group>"; };
+		A4F2795419C08E0700764C7A /* ZMNewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMNewEntryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +126,17 @@
 		A4151C4119BE0BF600F750A5 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				A43FE4CB19BE539100BD0601 /* Diary.xcdatamodeld */,
+				A43FE4CE19BE564C00BD0601 /* ZMDiaryEntry.h */,
+				A4F2795119C08C1700764C7A /* MainStoryboard.storyboard */,
+				A4F2795319C08E0700764C7A /* ZMNewEntryViewController.h */,
+				A4F2795419C08E0700764C7A /* ZMNewEntryViewController.m */,
+				A43FE4CF19BE564C00BD0601 /* ZMDiaryEntry.m */,
 				A4151C4A19BE0BF600F750A5 /* ZMAppDelegate.h */,
 				A4151C4B19BE0BF600F750A5 /* ZMAppDelegate.m */,
 				A4151C6E19BE11D200F750A5 /* ZMCoreDataStack.h */,
 				A4151C6F19BE11D200F750A5 /* ZMCoreDataStack.m */,
 				A4151C5019BE0BF600F750A5 /* Images.xcassets */,
-				A4151C4D19BE0BF600F750A5 /* Diary.xcdatamodeld */,
 				A4151C4219BE0BF600F750A5 /* Supporting Files */,
 			);
 			path = Diary;
@@ -234,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F2795219C08C1700764C7A /* MainStoryboard.storyboard in Resources */,
 				A4151C4619BE0BF600F750A5 /* InfoPlist.strings in Resources */,
 				A4151C5119BE0BF600F750A5 /* Images.xcassets in Resources */,
 			);
@@ -254,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43FE4D019BE564C00BD0601 /* ZMDiaryEntry.m in Sources */,
+				A4F2795519C08E0700764C7A /* ZMNewEntryViewController.m in Sources */,
 				A4151C7019BE11D200F750A5 /* ZMCoreDataStack.m in Sources */,
-				A4151C4F19BE0BF600F750A5 /* Diary.xcdatamodeld in Sources */,
 				A4151C4819BE0BF600F750A5 /* main.m in Sources */,
 				A4151C4C19BE0BF600F750A5 /* ZMAppDelegate.m in Sources */,
+				A43FE4CD19BE539100BD0601 /* Diary.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +470,7 @@
 				A4151C6A19BE0BF600F750A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4151C6B19BE0BF600F750A5 /* Build configuration list for PBXNativeTarget "DiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -462,18 +479,19 @@
 				A4151C6D19BE0BF600F750A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A4151C4D19BE0BF600F750A5 /* Diary.xcdatamodeld */ = {
+		A43FE4CB19BE539100BD0601 /* Diary.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A4151C4E19BE0BF600F750A5 /* ZMDiaryEntry */,
+				A43FE4CC19BE539100BD0601 /* Diary.xcdatamodel */,
 			);
-			currentVersion = A4151C4E19BE0BF600F750A5 /* ZMDiaryEntry */;
+			currentVersion = A43FE4CC19BE539100BD0601 /* Diary.xcdatamodel */;
 			path = Diary.xcdatamodeld;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
