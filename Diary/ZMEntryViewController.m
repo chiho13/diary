@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 ZeroMondays. All rights reserved.
 //
 
-#import "ZMNewEntryViewController.h"
+#import "ZMEntryViewController.h"
 #import "ZMDiaryEntry.h"
 #import "ZMCoreDataStack.h"
 
-@interface ZMNewEntryViewController ()
+@interface ZMEntryViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
 
-@implementation ZMNewEntryViewController
+@implementation ZMEntryViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +31,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if (self.entry !=nil){
+        self.textField.text = self.entry.body;
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,11 +57,24 @@
     [coreDataStack saveContext];
     
 }
+-(void) updateDiaryEntry{
+    self.entry.body=self.textField.text;
+    
+    ZMCoreDataStack *coreDataStack = [ZMCoreDataStack defaultStack];
+    [coreDataStack saveContext];
+}
 
 - (IBAction)doneWasPressed:(id)sender {
-    [self insertDiaryEntry];
+    if(self.entry !=nil){
+        [self updateDiaryEntry];
+    }else{
+        [self insertDiaryEntry];
+        
+    }
+    
     [self dismissSelf];
 }
+
 - (IBAction)cancelWasPressed:(id)sender {
     [self dismissSelf];
 }

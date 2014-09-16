@@ -9,12 +9,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Diary/ZMNewEntryViewController.m"
-            timestampString = "432139531.420227"
+            filePath = "Diary/ZMEntryViewController.m"
+            timestampString = "432510331.975452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "-insertDiaryEntry"
             landmarkType = "5">
          </BreakpointContent>

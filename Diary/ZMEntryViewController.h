@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZMNewEntryViewController : UIViewController
+@class ZMDiaryEntry;
+
+@interface ZMEntryViewController : UIViewController
+
+@property (nonatomic, strong) ZMDiaryEntry *entry;
 
 @end
