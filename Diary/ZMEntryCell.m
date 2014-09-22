@@ -40,7 +40,7 @@
     self.locationLabel.text= entry.location;
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"EEEE d MMMM yyyy"];
+    [dateFormatter setDateFormat:@"EEEE d MMM yyyy"];
     NSDate * date = [NSDate dateWithTimeIntervalSince1970:entry.date];
     self.dateLabel.text = [dateFormatter stringFromDate:date];
     if (entry.imageData){

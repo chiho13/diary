@@ -63,7 +63,7 @@
     
     NSDateFormatter  *dateFormatter=[[NSDateFormatter alloc] init];
     
-    [dateFormatter setDateFormat:@"EEEE d MMMM yyyy"];
+    [dateFormatter setDateFormat:@"EEEE d MMM yyyy"];
     self.dateLabel.text = [dateFormatter stringFromDate:date];
     self.textView.inputAccessoryView = self.accessoryView;
     
