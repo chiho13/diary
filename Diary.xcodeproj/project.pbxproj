@@ -24,6 +24,10 @@
 		A4151C7019BE11D200F750A5 /* ZMCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = A4151C6F19BE11D200F750A5 /* ZMCoreDataStack.m */; };
 		A43FE4CD19BE539100BD0601 /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A43FE4CB19BE539100BD0601 /* Diary.xcdatamodeld */; };
 		A43FE4D019BE564C00BD0601 /* ZMDiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A43FE4CF19BE564C00BD0601 /* ZMDiaryEntry.m */; };
+		A4DC864619C8BBE600DBB795 /* ZMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DC864519C8BBE600DBB795 /* ZMNavigationController.m */; };
+		A4DC864919C8D81900DBB795 /* ZMEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DC864819C8D81900DBB795 /* ZMEntryCell.m */; };
+		A4DC864B19CB02CC00DBB795 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DC864A19CB02CC00DBB795 /* QuartzCore.framework */; };
+		A4DC864D19CB6B3D00DBB795 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DC864C19CB6B3D00DBB795 /* CoreLocation.framework */; };
 		A4F2795219C08C1700764C7A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F2795119C08C1700764C7A /* MainStoryboard.storyboard */; };
 		A4F2795519C08E0700764C7A /* ZMEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F2795419C08E0700764C7A /* ZMEntryViewController.m */; };
 		A4F2799C19C45F6000764C7A /* ZMEntryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F2799B19C45F6000764C7A /* ZMEntryListViewController.m */; };
@@ -62,6 +66,12 @@
 		A43FE4CC19BE539100BD0601 /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
 		A43FE4CE19BE564C00BD0601 /* ZMDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMDiaryEntry.h; sourceTree = "<group>"; };
 		A43FE4CF19BE564C00BD0601 /* ZMDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMDiaryEntry.m; sourceTree = "<group>"; };
+		A4DC864419C8BBE600DBB795 /* ZMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMNavigationController.h; sourceTree = "<group>"; };
+		A4DC864519C8BBE600DBB795 /* ZMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMNavigationController.m; sourceTree = "<group>"; };
+		A4DC864719C8D81900DBB795 /* ZMEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEntryCell.h; sourceTree = "<group>"; };
+		A4DC864819C8D81900DBB795 /* ZMEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEntryCell.m; sourceTree = "<group>"; };
+		A4DC864A19CB02CC00DBB795 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A4DC864C19CB6B3D00DBB795 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A4F2795119C08C1700764C7A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A4F2795319C08E0700764C7A /* ZMEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMEntryViewController.h; sourceTree = "<group>"; };
 		A4F2795419C08E0700764C7A /* ZMEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMEntryViewController.m; sourceTree = "<group>"; };
@@ -74,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DC864D19CB6B3D00DBB795 /* CoreLocation.framework in Frameworks */,
+				A4DC864B19CB02CC00DBB795 /* QuartzCore.framework in Frameworks */,
 				A4151C3C19BE0BF600F750A5 /* CoreGraphics.framework in Frameworks */,
 				A4151C4019BE0BF600F750A5 /* CoreData.framework in Frameworks */,
 				A4151C3E19BE0BF600F750A5 /* UIKit.framework in Frameworks */,
@@ -117,6 +129,8 @@
 		A4151C3819BE0BF600F750A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4DC864C19CB6B3D00DBB795 /* CoreLocation.framework */,
+				A4DC864A19CB02CC00DBB795 /* QuartzCore.framework */,
 				A4151C3919BE0BF600F750A5 /* Foundation.framework */,
 				A4151C3B19BE0BF600F750A5 /* CoreGraphics.framework */,
 				A4151C3D19BE0BF600F750A5 /* UIKit.framework */,
@@ -132,12 +146,16 @@
 				A4F2799A19C45F6000764C7A /* ZMEntryListViewController.h */,
 				A4F2799B19C45F6000764C7A /* ZMEntryListViewController.m */,
 				A4F2795119C08C1700764C7A /* MainStoryboard.storyboard */,
+				A4DC864719C8D81900DBB795 /* ZMEntryCell.h */,
+				A4DC864819C8D81900DBB795 /* ZMEntryCell.m */,
 				A4F2795319C08E0700764C7A /* ZMEntryViewController.h */,
 				A4F2795419C08E0700764C7A /* ZMEntryViewController.m */,
 				A43FE4CE19BE564C00BD0601 /* ZMDiaryEntry.h */,
 				A43FE4CF19BE564C00BD0601 /* ZMDiaryEntry.m */,
 				A4151C4A19BE0BF600F750A5 /* ZMAppDelegate.h */,
 				A4151C4B19BE0BF600F750A5 /* ZMAppDelegate.m */,
+				A4DC864419C8BBE600DBB795 /* ZMNavigationController.h */,
+				A4DC864519C8BBE600DBB795 /* ZMNavigationController.m */,
 				A4151C6E19BE11D200F750A5 /* ZMCoreDataStack.h */,
 				A4151C6F19BE11D200F750A5 /* ZMCoreDataStack.m */,
 				A4151C5019BE0BF600F750A5 /* Images.xcassets */,
@@ -276,9 +294,11 @@
 				A43FE4D019BE564C00BD0601 /* ZMDiaryEntry.m in Sources */,
 				A4F2799C19C45F6000764C7A /* ZMEntryListViewController.m in Sources */,
 				A4F2795519C08E0700764C7A /* ZMEntryViewController.m in Sources */,
+				A4DC864919C8D81900DBB795 /* ZMEntryCell.m in Sources */,
 				A4151C7019BE11D200F750A5 /* ZMCoreDataStack.m in Sources */,
 				A4151C4819BE0BF600F750A5 /* main.m in Sources */,
 				A4151C4C19BE0BF600F750A5 /* ZMAppDelegate.m in Sources */,
+				A4DC864619C8BBE600DBB795 /* ZMNavigationController.m in Sources */,
 				A43FE4CD19BE539100BD0601 /* Diary.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

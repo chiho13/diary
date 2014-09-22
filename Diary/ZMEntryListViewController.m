@@ -10,6 +10,7 @@
 #import "ZMCoreDataStack.h"
 #import "ZMDiaryEntry.h"
 #import "ZMEntryViewController.h"
+#import "ZMEntryCell.h"
 
 @interface ZMEntryListViewController () <NSFetchedResultsControllerDelegate>
 
@@ -78,13 +79,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    ZMEntryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     ZMDiaryEntry *entry = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = entry.body;
+    [cell configureCellForEntry:entry];
     
     
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath: (NSIndexPath*) indexPath{
+    ZMDiaryEntry *entry = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    return [ZMEntryCell heightForEntry:entry];
 }
 
 -(UITableViewCellEditingStyle)tableView: (UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
